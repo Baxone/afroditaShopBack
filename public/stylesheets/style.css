@@ -1,0 +1,20 @@
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.products .card{
+  width: 300px;
+  margin: 15px;
+}
+
+/* .table td, .table th{
+  border: 5px dotted red;
+}
+
+.table.is-bordered td, .table.is-bordered th{
+  border-width: 5px;
+} */
+
