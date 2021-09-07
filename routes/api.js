@@ -7,6 +7,7 @@ const apiPublicProductsRouter = require('./api/publicproducts');
 const apiClientsRouter = require('./api/clients');
 const apiUsersRouter = require('./api/users');
 
+
 router.use('/products', checkToken, checkRole('A'), apiProductsRouter);
 router.use('/public_products', apiPublicProductsRouter);
 router.use('/clients', checkToken, checkAdmin, apiClientsRouter);

@@ -11,8 +11,10 @@ GET http://localhost:3000/api/public_products/cat/moda
 ###
 GET http://localhost:3000/api/products
 
+
 ###
 GET http://localhost:3000/api/products/v2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwiZXhwaXJlZF9hdCI6MTYzMTQ0NTEzNiwiY3JlYXRlZF9hdCI6MTYzMTAxMzEzNiwicm9sZSI6IkEiLCJpYXQiOjE2MzEwMTMxMzZ9.LYyLX6azAbmP_XChu5tdi_-oj7__QlLFKz5sVeETjsc
 
 ###
 GET http://localhost:3000/api/products/1/v2
@@ -20,6 +22,7 @@ GET http://localhost:3000/api/products/1/v2
 ###
 POST http://localhost:3000/api/products/v2
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwiZXhwaXJlZF9hdCI6MTYzMTQ0NTEzNiwiY3JlYXRlZF9hdCI6MTYzMTAxMzEzNiwicm9sZSI6IkEiLCJpYXQiOjE2MzEwMTMxMzZ9.LYyLX6azAbmP_XChu5tdi_-oj7__QlLFKz5sVeETjsc
 
 {
     "name": "Pantalón de pana",
@@ -31,6 +34,7 @@ Content-Type: application/json
 ###
 PUT http://localhost:3000/api/products/5
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwiZXhwaXJlZF9hdCI6MTYzMTQ0NTEzNiwiY3JlYXRlZF9hdCI6MTYzMTAxMzEzNiwicm9sZSI6IkEiLCJpYXQiOjE2MzEwMTMxMzZ9.LYyLX6azAbmP_XChu5tdi_-oj7__QlLFKz5sVeETjsc
 
 {
     "name": "Pantalón de pana",
@@ -47,7 +51,7 @@ GET http://localhost:3000/api/products/cat/moda
 
 ###
 GET http://localhost:3000/api/clients
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwiZXhwaXJlZF9hdCI6MTYyNjY5NDk5NSwiY3JlYXRlZF9hdCI6MTYyNjY5NDY5NSwicm9sZSI6IlIiLCJpYXQiOjE2MjY2OTQ2OTV9.f24yhWWD5ytjaldJB-o4sCv2Tf9YGHmWfv9ruWzQ3-8
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwiZXhwaXJlZF9hdCI6MTYzMTQ0NTEzNiwiY3JlYXRlZF9hdCI6MTYzMTAxMzEzNiwicm9sZSI6IkEiLCJpYXQiOjE2MzEwMTMxMzZ9.LYyLX6azAbmP_XChu5tdi_-oj7__QlLFKz5sVeETjsc
 
 ###
 POST http://localhost:3000/api/clients
@@ -57,8 +61,8 @@ POST http://localhost:3000/api/users/register
 Content-Type: application/json
 
 {
-    "username": "Marisol",
-    "email": "marisol@gmail.com",
+    "username": "Pepito Grillo",
+    "email": "grillo@gmail.com",
     "password": "Admin123!"
 }
 
@@ -67,10 +71,14 @@ POST http://localhost:3000/api/users/login
 Content-Type: application/json
 
 {
-    "email": "marisol@gmail.com",
+    "email": "federico@gmail.com",
     "password": "Admin123!"
 }
 
 ###
 GET http://localhost:3000/api/clients/user
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMywiZXhwaXJlZF9hdCI6MTYyNzEzNDgyNCwiY3JlYXRlZF9hdCI6MTYyNjcwMjgyNCwicm9sZSI6IlIiLCJpYXQiOjE2MjY3MDI4MjR9.kymg2NJIZtKq-oYt83Otehle3_jNBwfmBhB8jq-SlRE
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwiZXhwaXJlZF9hdCI6MTYzMTQ0MDI0NiwiY3JlYXRlZF9hdCI6MTYzMTAwODI0Niwicm9sZSI6IkEiLCJpYXQiOjE2MzEwMDgyNDZ9.fYSw1amW4ru87G8zUNtW5G4PajvP_MpQ0S5VjGUssdI
+
+###
+GET http://localhost:3000/api/users
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwiZXhwaXJlZF9hdCI6MTYzMTQ1MzIxMiwiY3JlYXRlZF9hdCI6MTYzMTAyMTIxMiwicm9sZSI6IkEiLCJpYXQiOjE2MzEwMjEyMTJ9.XiN_-ovXmcwFSbSaHmFc5-sFyTJz3j4PZa0iGjSmt8I
