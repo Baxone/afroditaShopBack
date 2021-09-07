@@ -1,7 +1,7 @@
 const { executeQuery, executeQueryUnique } = require('../helpers');
 
 // Recupero todos los productos
-const getAll = (page = 1, limit = 5) => {
+const getAll = (page = 1, limit = 1000) => {
     return executeQuery(
         'select * from products limit ? offset ?',
         [limit, limit * (page - 1)]
