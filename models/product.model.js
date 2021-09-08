@@ -8,6 +8,13 @@ const getAll = (page = 1, limit = 1000) => {
     );
 };
 
+const getCount = () => {
+    return executeQueryUnique(
+        'select count(*) as totalProducts from products'
+    )
+}
+
+
 // page: 1,2,3,4,5,6
 // limit: 5
 // offset: limit * (page-1)
@@ -86,5 +93,5 @@ const getByClient = (clientId) => {
 }
 
 module.exports = {
-    getAll, getById, create, getByCategory, update, remove, getByClient
+    getAll, getById, create, getByCategory, update, remove, getByClient, getCount
 }
